@@ -3,6 +3,7 @@ from tkMessageBox import *
 import sqlite3
 
 #------------------------------------------------------------------------------//---------------------//-------------------------/////---------------------------------------
+#sdsbsdbsdbbsdbsbbsb
 def page3():
     root = Tk()
     v_course=IntVar()
@@ -12,7 +13,7 @@ def page3():
     cur=con.cursor()
     cur.execute('create table if not exists stu_data(roll_no number(5) primary key,fname varchar(10),lname varchar(10),dob varchar(11),father varchar(10),course varchar(5),dept varchar(5),sem varchar(11),address varchar(20),mobile number,email varchar(10),cgpa number(4,2),dist varchar(30),state varchar(5))')
 
-
+    cur.execute('create table if not exists stu_datddda(roll_no number(5) primary key,fname varchar(10),lname varchar(10),dob varchar(11),father varchar(10),course varchar(5),dept varchar(5),sem varchar(11),address varchar(20),mobile number,email varchar(10),cgpa number(4,2),dist varchar(30),state varchar(5))')
 
     root.attributes('-fullscreen',True)
     shortcutbar = Frame(root, height=100, bg='light blue')
